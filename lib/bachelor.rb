@@ -1,7 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   # code here
   
-  data[season].each{|ele| 
+  data[:season].each{|ele| 
     if ele[:status] == "Winner"
       return ele[:name].split(" ")[0].join("")
     end
