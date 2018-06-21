@@ -5,6 +5,7 @@ def get_first_name_of_season_winner(data, season)
     if ele[:status] == "Winner"
       return ele[:name].split(" ")[0].join("")
     end
+  }
 end
 
 def get_contestant_name(data, occupation)
