@@ -38,7 +38,7 @@ def get_occupation(data, hometown)
   data.each{|season, ele|
     ele.each{|info|
     if info["hometown"] == hometown
-      
+    return info["occupation"]
     end
     }
   }
