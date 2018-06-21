@@ -23,6 +23,15 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   # code here
+  sum = 0
+  data.each{|season, ele|
+    ele.each{|info|
+    if info["hometown"] == hometown
+      sum += 1
+    end
+    }
+  }
+  return sum
 end
 
 def get_occupation(data, hometown)
