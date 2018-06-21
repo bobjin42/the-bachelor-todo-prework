@@ -12,7 +12,11 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  
+  data[season].each{|ele| 
+    if ele["occupation"] == occupation
+      return ele["name"]
+    end
+  }
 end
 
 def count_contestants_by_hometown(data, hometown)
