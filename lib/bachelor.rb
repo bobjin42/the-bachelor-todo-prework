@@ -12,7 +12,7 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  data.each{|season, ele| 
+  data.each{|season, ele|
     if ele["occupation"] == occupation
       return ele["name"]
     end
