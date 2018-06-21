@@ -53,5 +53,5 @@ def get_average_age_for_season(data, season)
     total_age += ages
     people += 1
   }
-  return total_age / people
+  return to_i(total_age / people)
 end
