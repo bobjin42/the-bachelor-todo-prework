@@ -46,4 +46,11 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  people = 0
+  total_age = 0
+  data[season].each{|ele|
+    total_age += ele["age"]
+    people += 1
+  }
+  return total_age / people
 end
